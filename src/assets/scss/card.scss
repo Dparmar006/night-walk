@@ -1,0 +1,23 @@
+.card {
+    cursor: pointer;
+    transition: $transition;
+    user-select: none;
+    background-color: $body-color;
+    &:hover, &:active {
+        box-shadow: $minimal-shadow;
+    }
+}
+
+.card__title {
+    color: $secondary;
+}
+
+.card__icon {
+   height: 50px; 
+   width: 50px;
+   border-radius: 50%;
+   display: grid;
+   place-items: center;
+   background: $secondary;
+   font-size: 1.2rem; 
+}

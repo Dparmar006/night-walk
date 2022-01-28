@@ -1,0 +1,35 @@
+.sidebar {
+    grid-area: sidebar;
+    background: $body-color;
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    transition: all 200ms linear;
+    width: 100%;
+    box-shadow: $minimal-shadow;
+    .logo {
+        margin-bottom: 1rem;
+    }
+}
+
+.sidebar-collapsed {
+   width: 5rem;  
+}
+
+.sidebar-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    li {
+        margin-bottom: 1rem;
+        width: 100%;
+        a{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}

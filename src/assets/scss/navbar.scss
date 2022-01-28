@@ -1,0 +1,10 @@
+.navbar{
+    grid-area: navbar;
+    background-color: $body-color;
+    height: 3rem;
+    padding: .5rem 1rem;
+    display: flex-start;
+    justify-content: space-between;
+    box-shadow: $minimal-shadow;
+}
+
