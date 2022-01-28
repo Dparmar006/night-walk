@@ -1,10 +1,13 @@
 import React from 'react'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 
 const Bookmarks = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Breadcrumbs title={'Apps'} subtitle={'Bookmarks'} />
+
       <h2>Bookmarks</h2>
-    </div>
+    </React.Fragment>
   )
 }
 

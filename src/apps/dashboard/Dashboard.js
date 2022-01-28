@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'reactstrap'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 import NCard from '../../components/cards/Card'
 
 const Dashboard = () => {
@@ -21,8 +22,8 @@ const Dashboard = () => {
     }
   ]
   return (
-    <div>
-      <h2>Dashboard</h2>
+    <React.Fragment>
+      <Breadcrumbs title={'Dashboards'} subtitle={'Dashboard'} />
       <Row>
         {navigationCards.map(card => (
           <Col xl={2} md={4} sm={6} xs={12} className='my-1'>
@@ -34,7 +35,7 @@ const Dashboard = () => {
           </Col>
         ))}
       </Row>
-    </div>
+    </React.Fragment>
   )
 }
 

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Card, CardBody, Col, Row } from 'reactstrap'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 import Button from '../../components/buttons/Button'
 import Input from '../../components/inputs/Input'
 import TextArea from '../../components/inputs/TextArea'
@@ -25,6 +26,8 @@ const Notes = () => {
 
   return (
     <Row>
+      <Breadcrumbs title={'Apps'} subtitle={'Notes'} />
+
       <Col tag={'form'} md={6} xs={12}>
         <Input
           name='title'

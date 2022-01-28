@@ -1,13 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs'
 
 import PaginationContainer from '../../components/Pagination/PaginationContainer'
 import rooms from '../../helper/rooms'
 
 const ListRooms = () => {
-  const ui = useSelector(state => state.Ui)
   return (
     <React.Fragment>
+      <Breadcrumbs title={'Apps'} subtitle={'Rent rooms'} />
+
       <PaginationContainer data={rooms} />
     </React.Fragment>
   )
