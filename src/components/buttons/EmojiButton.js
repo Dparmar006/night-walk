@@ -8,6 +8,7 @@ const EmojiButton = ({
   title,
   tooltipTitle,
   tooltipPlacement = 'top',
+  children,
   ...rest
 }) => {
   return (
@@ -18,7 +19,7 @@ const EmojiButton = ({
         {...rest}
         className={'emoji-button ' + className}
       >
-        {emoji} {!!title && title}
+        {emoji} {!!title && title} {children}
       </button>
       {tooltipTitle && (
         <UncontrolledTooltip

@@ -7,11 +7,12 @@ const Button = ({
   title,
   tooltipTitle,
   tooltipPlacement = 'top',
+  children,
   ...rest
 }) => {
   return (
     <button type={buttonType} className={`button ${className || ''}`} {...rest}>
-      {emoji} {!!title && title}
+      {emoji} {!!title && title} {children}
     </button>
   )
 }

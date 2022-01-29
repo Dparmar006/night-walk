@@ -15,6 +15,11 @@ export const menuItems = [
     pathname: '/bookmarks'
   },
   {
+    icon: '💄',
+    title: 'UI Elements',
+    pathname: '/ui-elements'
+  },
+  {
     icon: '🏨',
     title: 'Rent Rooms',
     pathname: '/rent-rooms'

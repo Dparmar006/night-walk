@@ -1,9 +1,15 @@
 import React from 'react'
 import { Card, CardBody } from 'reactstrap'
+import { useNavigate } from 'react-router-dom'
 
-const NCard = ({ icon = '🐤', title, subtitle }) => {
+const NCard = ({ icon = '🐤', title, subtitle, link }) => {
+  const navigate = useNavigate()
   return (
-    <Card className='card' color='body-color'>
+    <Card
+      className='card'
+      color='body-color'
+      onClick={link ? () => navigate(link) : ''}
+    >
       <CardBody className='d-flex justify-content-between align-items-center'>
         <div className='card__info'>
           <h6 className='card__title'>{title}</h6>

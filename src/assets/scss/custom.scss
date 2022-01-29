@@ -32,3 +32,25 @@ body {
     height: calc(100vh - 5rem);
     overflow-x: hidden;
 }
+
+.primary-color {
+    background-color: $primary;
+}
+.warning-color {
+    background-color: $warning;
+}
+.success-color {
+    background-color: $success;
+}
+.danger-color {
+    background-color: $danger;
+}
+.secondary-color {
+    background-color: $secondary;
+}
+.background-color {
+    background-color: $background;
+}
+.body-bg-color {
+    background-color: $body-bg;
+}
